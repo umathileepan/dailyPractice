@@ -1,0 +1,82 @@
+body{
+    background-color: blanchedalmond;
+}
+img{
+    height: 200px;
+    width: auto;
+    float: left;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #0f3c61;
+    margin: 80px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: #617f92;
+}
+mark{
+    background-color: #bfcbd3
+}
+
+.num1{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px;
+    margin-left: 380px;
+}
+
+.plus{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.num2{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.equal{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sum{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+
+input[type=text]{
+   
+    width: 100px;
+    border-style: none;
+}
+
+.calculate{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 720px;
+    background-color: rgb(40, 72, 131);
+    color:rgb(201, 228, 228);
+}
+
+.next{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    background-color: rgb(40, 72, 131);
+    color:rgb(201, 228, 228);
+}
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <img src="./mathAdd.png" alt="image for maths addition">
+    <h1 className="title">Maths - Addition</h1>
+    <h2 className="instruct">Add the following numbers and press <mark>Calculate</mark> button to check your answer.</h2>
+    <form> 
+    <input type="text" name="num1" value=num1 class="num1" readOnly/> <span class="plus">+</span> 
+    <input type="text" name="num2" value=num2 class="num2" readOnly/> <span class="equal">=</span> 
+    <input type="text" onchange={this.myChangeHandler} name="sum" class="sum"/>
+     <br/>
+        <br/>
+        <button class="calculate" onclick={this.calculator} type="submit" name="sum">Calculate</button>
+        <button class="next" name="next">Next</button>
+        
+    </form>
+    <script src="./index.js"> </script>
+</body>
+</html> 
