@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Math Addition</title>
     <link rel="stylesheet" href="index.css">
 </head>
-<body>
-    <img src="./mathAdd.png" alt="image for maths addition">
-    <h1 className="title">Maths - Addition</h1>
-    <h2 className="instruct">Add the following numbers and press <mark>Calculate</mark> button to check your answer.</h2>
-    <form> 
-    <input type="text" name="num1" value=num1 class="num1" readOnly/> <span class="plus">+</span> 
-    <input type="text" name="num2" value=num2 class="num2" readOnly/> <span class="equal">=</span> 
-    <input type="text" onchange={this.myChangeHandler} name="sum" class="sum"/>
-     <br/>
-        <br/>
-        <button class="calculate" onclick={this.calculator} type="submit" name="sum">Calculate</button>
-        <button class="next" name="next">Next</button>
-        
-    </form>
-    <script src="./index.js"> </script>
+<body onload="getNum()">
+    <main>
+        <div>
+            <img src="./mathAdd.png" alt="image for maths addition">
+        </div>
+        <div>
+            <h1 className="title">Maths - Addition</h1>
+            <h2 className="instruct">Add the following numbers and press <mark>Calculate</mark> button to check your answer.</h2>
+        </div>
+        <div class="container">
+            <input type="text" id="num1Id" name="num1" value="" class="num1" readOnly /> <span class="plus">+</span> 
+            <input type="text" id="num2Id" name="num2" value="" class="num2" readOnly /> <span class="equal">=</span> 
+            <input type="text" id="sum" name="sum" class="sum"/>
+            <br/>
+            <br/>
+            <button class="calculate" name="sum" onclick="checkSum()">Calculate</button>
+            <button class="next" name="next" onclick="getNum()">Next</button>
+            <p id="result"></p>
+        </div>
+    </main>
+    <script> 
+            function getNum(){
+            document.getElementById("num1Id").value=Math.floor(Math.random()*10);
+            document.getElementById("num2Id").value=Math.floor(Math.random()*10);
+            document.getElementById("sum").value="";
+            document.getElementById("result").innerHTML="";
+            }
+
+            function checkSum(){
+              var num1 = document.getElementById("num1Id").value;
+              var num2 = document.getElementById("num2Id").value;
+              var sum = document.getElementById("sum").value;
+              console.log(num1);
+              console.log(num2);
+              console.log(sum);
+              var total = parseInt(num1) + parseInt(num2);
+              console.log(total);
+              if(parseInt(total) === parseInt(sum)){
+                    document.getElementById("result").innerHTML="Well Done!"
+                    document.getElementById("result").style.color="rgb(15, 170, 28)";
+               } else {
+                    document.getElementById("result").style.color="rgb(255, 70, 28)";
+                    document.getElementById("result").innerHTML="Oops try again!"
+                }
+            }
+    </script>
 </body>
 </html> 

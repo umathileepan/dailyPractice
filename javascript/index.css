@@ -1,5 +1,6 @@
 body{
     background-color: blanchedalmond;
+    width: 100%;
 }
 img{
     height: 200px;
@@ -80,3 +81,125 @@ input[type=text]{
     color:rgb(201, 228, 228);
 }
 
+#result{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+    margin-left: 220px;
+}
+
+@media screen and (max-width: 1000px){
+    body{
+     background-color: rgb(238, 202, 149);
+    }
+ 
+    img{
+        width: 200px;
+        float: none;
+        margin: 20px;
+        margin-left: 380px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+ 
+    h2{
+        font-size: 20px;
+        margin: 20px;
+    }
+ 
+    p{
+     font-size: 15px;
+    }
+
+    .num1, .plus, .num2, .equal, .sum{
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .num1{
+        margin-left: 150px;
+    } 
+    .calculate, #result{
+        margin-left: 150px;
+    }
+  } 
+
+
+@media screen and (max-width: 800px){
+    body{
+     background-color: rgb(238, 202, 149);
+    }
+ 
+    img{
+        width: 200px;
+        float: none;
+        margin: 20px;
+        margin-left: 260px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+ 
+    h2{
+        font-size: 20px;
+        margin: 20px;
+    }
+ 
+    p{
+     font-size: 15px;
+    }
+
+    .num1, .plus, .num2, .equal, .sum{
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .num1{
+        margin-left: 150px;
+    } 
+    .calculate, #result{
+        margin-left: 150px;
+    }
+  } 
+
+@media screen and (max-width: 600px){
+    body{
+     background-color: rgb(238, 202, 149);
+    }
+ 
+    img{
+        width: 200px;
+        float: none;
+        margin: 20px;
+        margin-left: 140px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+ 
+    h2{
+        font-size: 20px;
+        margin: 20px;
+    }
+ 
+    p{
+     font-size: 15px;
+    }
+
+    .num1, .plus, .num2, .equal, .sum{
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .num1{
+        margin-left: 50px;
+    } 
+    .calculate, #result{
+        margin-left: 150px;
+    }
+  } 
