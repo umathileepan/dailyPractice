@@ -89,16 +89,24 @@ input[type=text]{
     margin-left: 220px;
 }
 
-@media screen and (max-width: 1000px){
-    body{
-     background-color: rgb(238, 202, 149);
+@media screen and (max-width: 1200px){
+  
+    .calculate{
+        margin-left: 450px;
     }
- 
+
+    #result{
+        margin-left: 250px;
+    }
+  } 
+
+@media screen and (max-width: 1000px){
+    
     img{
         width: 200px;
         float: none;
         margin: 20px;
-        margin-left: 380px;
+        margin-left: 300px;
     }
     h1{
         font-size: 30px;
@@ -110,20 +118,21 @@ input[type=text]{
         margin: 20px;
     }
  
-    p{
-     font-size: 15px;
-    }
-
+    
     .num1, .plus, .num2, .equal, .sum{
         font-size: 30px;
-        margin: 2px;
+        margin: 5px;
     }
     
     .num1{
-        margin-left: 150px;
+        margin-left: 220px;
     } 
-    .calculate, #result{
-        margin-left: 150px;
+    .calculate{
+        margin-left: 300px;
+    }
+
+    #result{
+        margin-left: 90px;
     }
   } 
 
@@ -149,20 +158,20 @@ input[type=text]{
         margin: 20px;
     }
  
-    p{
-     font-size: 15px;
-    }
-
     .num1, .plus, .num2, .equal, .sum{
         font-size: 30px;
         margin: 2px;
     }
     
     .num1{
-        margin-left: 150px;
+        margin-left: 200px;
     } 
-    .calculate, #result{
-        margin-left: 150px;
+    .calculate{
+        margin-left: 250px;
+    }
+
+    #result{
+        margin-left: 40px;
     }
   } 
 
@@ -187,10 +196,6 @@ input[type=text]{
         margin: 20px;
     }
  
-    p{
-     font-size: 15px;
-    }
-
     .num1, .plus, .num2, .equal, .sum{
         font-size: 30px;
         margin: 2px;
@@ -199,7 +204,11 @@ input[type=text]{
     .num1{
         margin-left: 50px;
     } 
-    .calculate, #result{
-        margin-left: 150px;
+    .calculate{
+        margin-left: 100px;
+    }
+
+    #result{
+        margin-left: 10px;
     }
   } 
