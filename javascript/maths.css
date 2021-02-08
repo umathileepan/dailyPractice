@@ -1,0 +1,214 @@
+body{
+    background-color: rgb(168, 164, 157);
+    width: 100%;
+}
+img{
+    height: auto;
+    width: 400px;
+    float: left;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 40px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #0f3c61;
+    margin: 80px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    color: #617f92;
+}
+mark{
+    background-color: #bfcbd3
+}
+
+.num1{
+    text-align: center;
+    font-size: 40px;
+    margin: 40px;
+    margin-left: 380px;
+}
+
+.plus{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.num2{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+
+.equal{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.sum{
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+}
+
+input[type=text]{
+   
+    width: 100px;
+    border-style: none;
+}
+
+.calculate{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    margin-left: 720px;
+    background-color: rgb(40, 72, 131);
+    color:rgb(201, 228, 228);
+}
+
+.next{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    background-color: rgb(40, 72, 131);
+    color:rgb(201, 228, 228);
+}
+
+#result{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px;
+    margin-left: 220px;
+}
+
+@media screen and (max-width: 1200px){
+  
+    .calculate{
+        margin-left: 450px;
+    }
+
+    #result{
+        margin-left: 250px;
+    }
+  } 
+
+@media screen and (max-width: 1000px){
+    
+    img{
+        width: 200px;
+        float: none;
+        margin: 20px;
+        margin-left: 300px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+ 
+    h2{
+        font-size: 20px;
+        margin: 20px;
+    }
+ 
+    
+    .num1, .plus, .num2, .equal, .sum{
+        font-size: 30px;
+        margin: 5px;
+    }
+    
+    .num1{
+        margin-left: 220px;
+    } 
+    .calculate{
+        margin-left: 300px;
+    }
+
+    #result{
+        margin-left: 90px;
+    }
+  } 
+
+
+@media screen and (max-width: 800px){
+    body{
+     background-color: rgb(238, 202, 149);
+    }
+ 
+    img{
+        width: 200px;
+        float: none;
+        margin: 20px;
+        margin-left: 260px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+ 
+    h2{
+        font-size: 20px;
+        margin: 20px;
+    }
+ 
+    .num1, .plus, .num2, .equal, .sum{
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .num1{
+        margin-left: 200px;
+    } 
+    .calculate{
+        margin-left: 250px;
+    }
+
+    #result{
+        margin-left: 40px;
+    }
+  } 
+
+@media screen and (max-width: 600px){
+    body{
+     background-color: rgb(238, 202, 149);
+    }
+ 
+    img{
+        width: 200px;
+        float: none;
+        margin: 20px;
+        margin-left: 140px;
+    }
+    h1{
+        font-size: 30px;
+        margin: 20px;
+    }
+ 
+    h2{
+        font-size: 20px;
+        margin: 20px;
+    }
+ 
+    .num1, .plus, .num2, .equal, .sum{
+        font-size: 30px;
+        margin: 2px;
+    }
+    
+    .num1{
+        margin-left: 50px;
+    } 
+    .calculate{
+        margin-left: 100px;
+    }
+
+    #result{
+        margin-left: 10px;
+    }
+  } 
