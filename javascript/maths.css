@@ -1,25 +1,33 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
 body{
-    background-color: rgb(168, 164, 157);
+    background-color: rgb(161, 209, 231);
     width: 100%;
 }
+
 img{
     height: auto;
     width: 400px;
     float: left;
     object-fit: cover;
-    margin-right: 20px;
+    margin: 50px;
     border-radius: 40px;
 }
 h1{
-    text-align: center;
     font-size: 40px;
-    color: #0f3c61;
-    margin: 80px;
+    color: #0d1013;
+    margin: 60px;
+    margin-left: 750px;
 }
 h2{
-    text-align: center;
     font-size: 30px;
-    color: #617f92;
+    color: #0a334d;
+    margin: 40px;
+    margin-left: 500px;
 }
 mark{
     background-color: #bfcbd3
@@ -28,11 +36,11 @@ mark{
 .num1{
     text-align: center;
     font-size: 40px;
-    margin: 40px;
-    margin-left: 380px;
+    margin: 20px;
+    margin-left: 60px;
 }
 
-.plus{
+.sign{
     text-align: center;
     font-size: 40px;
     font-weight: bold;
@@ -68,8 +76,8 @@ input[type=text]{
     text-align: center;
     font-size: 30px;
     margin: 20px;
-    margin-left: 720px;
-    background-color: rgb(40, 72, 131);
+    margin-left: 170px;
+    background-color: rgb(5, 34, 90);
     color:rgb(201, 228, 228);
 }
 
@@ -77,7 +85,7 @@ input[type=text]{
     text-align: center;
     font-size: 30px;
     margin: 20px;
-    background-color: rgb(40, 72, 131);
+    background-color:   rgb(5, 34, 90);
     color:rgb(201, 228, 228);
 }
 
@@ -86,129 +94,50 @@ input[type=text]{
     font-size: 40px;
     font-weight: bold;
     margin: 20px;
-    margin-left: 220px;
+    margin-left: 50px;
 }
 
 @media screen and (max-width: 1200px){
-  
-    .calculate{
-        margin-left: 450px;
-    }
-
-    #result{
-        margin-left: 250px;
-    }
-  } 
-
-@media screen and (max-width: 1000px){
-    
     img{
-        width: 200px;
         float: none;
-        margin: 20px;
-        margin-left: 300px;
+    }
+    .two-col{
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 50px;
     }
     h1{
-        font-size: 30px;
-        margin: 20px;
-    }
- 
-    h2{
-        font-size: 20px;
-        margin: 20px;
-    }
- 
-    
-    .num1, .plus, .num2, .equal, .sum{
-        font-size: 30px;
-        margin: 5px;
-    }
-    
-    .num1{
-        margin-left: 220px;
-    } 
-    .calculate{
-        margin-left: 300px;
-    }
-
-    #result{
-        margin-left: 90px;
-    }
-  } 
-
-
-@media screen and (max-width: 800px){
-    body{
-     background-color: rgb(238, 202, 149);
-    }
- 
-    img{
-        width: 200px;
-        float: none;
-        margin: 20px;
-        margin-left: 260px;
-    }
-    h1{
-        font-size: 30px;
-        margin: 20px;
-    }
- 
-    h2{
-        font-size: 20px;
-        margin: 20px;
-    }
- 
-    .num1, .plus, .num2, .equal, .sum{
-        font-size: 30px;
-        margin: 2px;
-    }
-    
-    .num1{
         margin-left: 200px;
-    } 
-    .calculate{
-        margin-left: 250px;
+    }
+    h2{
+        margin-left: 50px;
     }
 
     #result{
-        margin-left: 40px;
+        margin-left: 0px;
     }
-  } 
-
+   
+} 
 @media screen and (max-width: 600px){
-    body{
-     background-color: rgb(238, 202, 149);
-    }
- 
     img{
-        width: 200px;
         float: none;
-        margin: 20px;
-        margin-left: 140px;
+    }
+    .two-col{
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 50px;
     }
     h1{
-        font-size: 30px;
-        margin: 20px;
+        margin-left: 200px;
     }
- 
     h2{
-        font-size: 20px;
-        margin: 20px;
-    }
- 
-    .num1, .plus, .num2, .equal, .sum{
-        font-size: 30px;
-        margin: 2px;
-    }
-    
-    .num1{
         margin-left: 50px;
-    } 
-    .calculate{
-        margin-left: 100px;
     }
 
     #result{
-        margin-left: 10px;
+        margin-left: 0px;
     }
-  } 
+   
+} 

@@ -9,20 +9,18 @@
 </head>
 <body onload="getNum()">
     <main>
-        <div>
+        <div class="two-col">
             <img src="./maths.png" alt="image for maths addition">
         </div>
-        <div>
+        <div class="two-col">
             <h1 className="title">Maths</h1>
-            <h2 className="instruct">choose the operator and give the answer then press <mark>Calculate</mark> button to check your answer.</h2>
-        </div>
-        <div class="container">
+            <h2 className="instruct">Please choose the <mark>operator</mark> and give the answer then press <mark>Calculate</mark> button to check your answer.</h2>
             <input type="text" id="num1Id" name="num1" value="" class="num1" readOnly />
             <select id="sign" class="sign" name="sign" value="Submit"> 
-                <option value="plus">+</option>
-                <option value="minus">-</option>
-                <option value="multi">*</option>
-                <option value="divide">/</option>
+              <option value="plus">+</option>
+              <option value="minus">-</option>
+              <option value="multi">*</option>
+              <option value="divide">/</option>
             </select>
             <input type="text" id="num2Id" name="num2" value="" class="num2" readOnly /> <span class="equal">=</span> 
             <input type="text" id="sum" name="sum" class="sum"/>
@@ -42,44 +40,33 @@
             }
 
             function checkSum(){
-              let num1 = document.getElementById("num1Id").value;
-              let num2 = document.getElementById("num2Id").value;
-              let sum = document.getElementById("sum").value;
-              let total=0;
-              console.log("num1" + num1);
-              console.log("num2" + num2);
-              console.log("sum" + sum);
-              let addtotal = parseInt(num1) + parseInt(num2);
-              console.log("addtotal" +addtotal);
-              let subtracttotal = parseInt(num1) - parseInt(num2);
-              let multitotal = parseInt(num1) * parseInt(num2);
-              let dividetotal = parseInt(num1) / parseInt(num2);
-              let sign = document.getElementById("sign");
-              let signSelected = sign.options[sign.selectedIndex].value;
+                let num1 = document.getElementById("num1Id").value;
+                let num2 = document.getElementById("num2Id").value;
+                let sum = document.getElementById("sum").value;
+                let total=0;
+                let addtotal = parseInt(num1) + parseInt(num2);
+                let subtracttotal = parseInt(num1) - parseInt(num2);
+                let multitotal = parseInt(num1) * parseInt(num2);
+                let dividetotal = parseInt(num1) / parseInt(num2);
+                let sign = document.getElementById("sign");
+                let signSelected = sign.options[sign.selectedIndex].value;
               
-
-              console.log(signSelected);
-              if(signSelected==="plus"){
-                total = addtotal;
-                console.log("addtotal" +addtotal);
-                console.log("total" +total);
-              } else if(signSelected==="minus"){
-                total = subtracttotal;
-                console.log("total" +total);
-              } else if(signSelected==="multi"){
-                total = multitotal;
-                console.log("multitotal" +multitotal);
-              } else if(signSelected==="divide"){
-                total = dividetotal;
-                console.log("dividetotal" +dividetotal);
-              } 
-              console.log("total" +total);
-              if(parseInt(total) === parseInt(sum)){
-                 document.getElementById("result").innerHTML="Well Done!"
-                 document.getElementById("result").style.color="rgb(15, 170, 28)";
+                if(signSelected==="plus"){
+                  total = addtotal;
+                } else if(signSelected==="minus"){
+                  total = subtracttotal;
+                } else if(signSelected==="multi"){
+                  total = multitotal;
+                } else if(signSelected==="divide"){
+                  total = dividetotal;
+                } 
+              
+                if(parseInt(total) === parseInt(sum)){
+                  document.getElementById("result").innerHTML="Well Done!"
+                  document.getElementById("result").style.color="rgb(15, 170, 28)";
                 } else {
-                document.getElementById("result").style.color="rgb(255, 70, 28)";
-                document.getElementById("result").innerHTML="Oops try again!"
+                  document.getElementById("result").style.color="rgb(255, 70, 28)";
+                  document.getElementById("result").innerHTML="Oops try again!"
                 }
               
             }
