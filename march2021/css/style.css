@@ -1,0 +1,26 @@
+img{
+    width: 100px;
+    border-radius: 50px;
+    float: left;
+    margin-right: 10px;
+}
+.username{
+    font-weight: bold;
+    margin-top: 0px;
+    
+}
+p{
+    margin-top: -20px;
+    font-size: 24px;
+}
+
+img.coffee{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+video{
+    width: 400px;
+    
+}
