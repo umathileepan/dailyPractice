@@ -1,4 +1,4 @@
-const numbers = arrayFromRange(-10,-4);
+/*const numbers = arrayFromRange(-10,-4);
 
 console.log(numbers);
 
@@ -77,18 +77,45 @@ function countOccerunce(array,element){
         console.log(accumulator,current,element);
         return accumulator + occurrence;
     },0);
-}
+}*/
 
-const listofNum = [20,4,7,9,1,2];
+const listofNum = [20,4,7,49,1,2];
 
 const max = getMax(listofNum);
 
 console.log(max);
 
 function getMax(array){
-    let maxNum = 0;
+    if(array.length===0) return undefined;
+
+    /*let maxNum = 0;
     for(let num of array)
         if(num > maxNum)
             maxNum = num;
-    return maxNum;
+    return maxNum;*/
+
+    //You can use reduce method instead of the above coding to find the maximum number
+    return array.reduce((previousValue,currentValue) => previousValue > currentValue ? previousValue : currentValue);
 }
+
+const movies = [
+    {title: 'a', year: 2018, rating: 4.5},
+    {title: 'b', year: 2018, rating: 4.7},
+    {title: 'c', year: 2018, rating: 3.5},
+    {title: 'd', year: 2017, rating: 3.9},
+];
+
+const titles = movies.filter(m => m.year === 2018 && m.rating >= 4).sort((a,b) => a.rating - b.rating).reverse().map(m => m.title);
+
+console.log(titles);
+
+//Function declaration
+function walk(){
+    console.log("Walk to JavaScript function declaration");
+}
+
+walk();
+
+//Expression function declaration
+const run = function(){ console.log("This is an anonymus like variable declartion function")};
+run();
