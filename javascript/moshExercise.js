@@ -119,3 +119,32 @@ walk();
 //Expression function declaration
 const run = function(){ console.log("This is an anonymus like variable declartion function")};
 run();
+
+/*function sum(){
+    let total = 0;
+    for(let num of arguments)
+        total += num;
+    return total;
+}*/
+
+console.log(sum(2,3,4,1,5));
+
+//REST operator
+function sum(...args) {
+    return args.reduce((a,b) => a + b);
+}
+
+function totalPrice(discount, ...prices) {
+    const total = prices.reduce((a,b) => a + b);
+    return total * (1 - discount);
+}
+
+console.log(totalPrice(0.2, 20, 30));
+
+//Default value for parameter
+
+function interest(principal, rate = 3.5, years = 5) {
+    return principal * rate / 100 * years;
+}
+
+console.log(interest(10000));
