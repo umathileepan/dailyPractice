@@ -148,3 +148,15 @@ function interest(principal, rate = 3.5, years = 5) {
 }
 
 console.log(interest(10000));
+
+//Sum the number you pass, it could be an Array
+const total = sum([1,2,3,4]);
+
+console.log(total);
+
+function sum(...num){
+    if(Array.isArray===true)
+        for(let value of Array)
+            return  value += value;
+    else return num += num;
+}
