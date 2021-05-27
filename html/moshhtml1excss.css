@@ -4,6 +4,8 @@ body {
 table {
   border-collapse: collapse;
   position: absolute;
+  top: 10px;
+  left: 10px;
 }
 td {
   border: #c4dcf3;
@@ -35,6 +37,8 @@ tr:nth-child(odd) {
   box-shadow: 10px 10px lightgray;
   border-radius: 100%;
   float: left;
+  position: relative;
+  top: 300px;
 }
 .container {
   display: inline-block;
@@ -44,4 +48,12 @@ tr:nth-child(odd) {
   overflow: hidden auto;
   position: relative;
   left: 5rem;
+  top: 300px;
+}
+.clearfix {
+  content: "";
+  display: block;
+  clear: both;
+  position: relative;
+  top: 35 0px;
 }
