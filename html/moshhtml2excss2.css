@@ -26,8 +26,47 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .container {
+    width: 500px;
+  }
 }
 
+/*Blog Page exercise*/
+
+.container {
+  width: 1140px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+div h1,
+h2,
+h3,
+ul,
+img,
+p {
+  margin: 2rem 3rem 2rem 3rem;
+}
+
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+}
+
+img {
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+ul {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  font-size: 62.5%;
+}
 /*html {
   font-size: 62.5%;
 }
