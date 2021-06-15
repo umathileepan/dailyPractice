@@ -19,18 +19,6 @@ body {
   margin: 1rem;
 }
 
-@media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    height: 300px;
-    justify-content: center;
-    align-items: center;
-  }
-  .container {
-    width: 500px;
-  }
-}
-
 /*Blog Page exercise*/
 
 .container {
@@ -66,6 +54,30 @@ ul {
 
 ul {
   font-size: 62.5%;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 8 00px;
+  }
+  img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 400px;
+  }
+  img {
+    width: 80%;
+  }
 }
 /*html {
   font-size: 62.5%;

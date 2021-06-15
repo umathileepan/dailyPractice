@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Addition from './addition.jsx';
+import Hello from './hello.jsx'
 import CSS from './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Addition />
+     <Hello />
   </React.StrictMode>,
   document.getElementById('root')
 );
